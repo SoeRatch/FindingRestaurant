@@ -1,0 +1,64 @@
+.article {
+ display: block;
+ font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screens . */
+@media only screen and (max-width: 900px){
+	.article {
+ 
+  width: 100vw;
+
+}
+}
+
+
+h5.newspaper {
+font-family: Georgia, "Times New Roman", Times, serif;
+letter-spacing: .10em;
+font-size: 36px;
+text-transform: uppercase;
+font-weight: 100;
+border-bottom: groove 2px #CCCCCC;
+width: auto;
+line-height: 1em;
+}
+
+.superdiv{
+margin-bottom:20px;
+}
+
+.subdiv{
+	
+	color:#51c479;
+  font-family: 'Amatic SC', cursive;
+  font-size:1.5em;
+  display:inline-block;
+}
+.inlinediv{
+  margin-top:5px;
+  display:inline-block;
+  font-size:1em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.inlinedivx{
+	color:#000000;
+  margin-top:5px;
+  display:inline-block;
+  font-size:1em;
+  font-family: "Times New Roman";
+}
+
+
+.lefthouse{
+  border-bottom: groove 2px #CCCCCC;
+    margin-left: auto;
+  margin-right: auto;
+}

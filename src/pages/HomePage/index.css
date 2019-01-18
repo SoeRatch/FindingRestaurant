@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lateef|Orbitron');
+
+.symbols{
+  display: inline-block;
+  top: 0%;
+  left: 50 %;
+  width: 350px;
+  padding: 8px 4px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
+.pfcontent{
+    font-size:16px;
+    line-height:1.5;
+    padding:3vw;
+}
+
+
+
+section {
+  display: block;
+}
+
+.col {
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+
+.col:hover {
+
+  -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.col h3 {padding: 5px; background: #e46d47;line-height: 1em; color:#000;font-family: cursive;}
+
+/* Small screens . */
+@media only screen and (max-width: 900px){
+
+  .inpbut{
+  width:78vw;
+  border-bottom: groove 2px #CCCCCC;
+}
+
+.inputed{
+  width:73vw;
+  height:auto;
+  border:none;
+  outline:none;
+  background:none;
+  padding:6px 3px;
+}
+
+  .pfgrid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:auto;
+      grid-row-gap:1rem;
+    }
+
+    .swiggleBox{
+        height:45vw;
+       }
+}
+
+/* large screens . */
+@media only screen and (min-width: 901px){
+
+.inlinediv{
+  width:30vw;
+}
+    .inpbut{
+      margin-left: 10px;
+  width:52vw;
+  border-bottom: groove 2px #CCCCCC;
+}
+
+.inputed{
+  width:50vw;
+  height:auto;
+  border:none;
+  outline:none;
+  background:none;
+  padding:6px 3px;
+}
+  
+  .pfgrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:auto;
+      grid-row-gap:1rem;
+      grid-column-gap:2rem;
+    }
+
+}
+
+.swiggleBox{
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  height:15vw;
+
+    margin-bottom:1rem;
+
+}
+
+.square{
+
+    border: 2px solid #111;
+}
+
+svg {
+    z-index:-1;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+}
+
+svg path{
+  fill: #F8F8FF;
+  stroke: black;
+  stroke-width: 0.5;
+}
+ .swiggleBox:hover svg path{
+  stroke: black;
+}
+
+
+
+
+/* Swiggle Box */
+svg path {
+  stroke-dasharray: 265, 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.swiggleBox:hover svg path {
+  stroke-width: 1;
+  stroke-dasharray: 0, 350;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
